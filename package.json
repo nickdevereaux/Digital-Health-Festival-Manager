@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "vite build",
     "extract-agenda": "tsx extract-agenda.mts",
     "setup": "pnpm install && pnpm run extract-agenda",
     "inspect": "tsx inspect.mts"
   },
   "dependencies": {
+    "@vueuse/core": "^14.3.0",
     "pinia": "^2.1.0",
-    "vue": "^3.4.0"
+    "vue": "^3.4.0",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@types/jsdom": "^28.0.3",
