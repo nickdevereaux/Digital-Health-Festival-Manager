@@ -1,0 +1,29 @@
+{
+  "name": "digital-health-festival-manager",
+  "version": "1.0.0",
+  "description": "Visualize and manage your Digital Health Festival 2026 conference schedule",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "extract-agenda": "tsx extract-agenda.mts",
+    "setup": "pnpm install && pnpm run extract-agenda",
+    "inspect": "tsx inspect.mts"
+  },
+  "dependencies": {
+    "pinia": "^2.1.0",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^28.0.3",
+    "@types/node": "^25.9.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/tsconfig": "^0.9.1",
+    "jsdom": "^24.0.0",
+    "tsx": "^4.22.2",
+    "typescript": "^6.0.3",
+    "vite": "^5.0.0",
+    "vue-tsc": "^3.3.0"
+  }
+}
