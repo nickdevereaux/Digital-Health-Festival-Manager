@@ -1,0 +1,191 @@
+{
+  "distinguished": [
+    {
+      "name": "James Muecke",
+      "role": "Australian of the Year 2020 & Advisory Board Member",
+      "tag": "🏆 Australian of the Year 2020",
+      "sessions": [
+        { "day": 1, "time": "10:45", "title": "Confronting Australia's chronic disease challenge" }
+      ]
+    },
+    {
+      "name": "Noah Szto",
+      "role": "Award Winning Comedian & Doctor of Medicine",
+      "tag": "🎭 Comedian & Doctor",
+      "sessions": [
+        { "day": 1, "time": "11:35", "title": "Award winning comedian & doctor of medicine - comedy performance" }
+      ]
+    }
+  ],
+  "government": [
+    {
+      "name": "Matt Doocey",
+      "role": "Minister for Mental Health | Associate Minister of Health",
+      "tag": "🏛️ Government Minister",
+      "sessions": [
+        { "day": 1, "time": "13:00", "title": "Healthcare doesn't fail on strategy - it fails in operations" },
+        { "day": 1, "time": "14:30", "title": "From innovation to global impact: how New Zealand is shaping the future of healthtech" }
+      ]
+    },
+    {
+      "name": "Lisa Tepper",
+      "role": "First Assistant Secretary Information Technology",
+      "tag": "🏛️ Government",
+      "sessions": [
+        { "day": 1, "time": "11:00", "title": "AI is now critical infrastructure (but are we ready?)" }
+      ]
+    },
+    {
+      "name": "Daniel McCabe",
+      "role": "First Assistant Secretary Medicare Benefits and Digital Health",
+      "tag": "🏛️ Government",
+      "sessions": [
+        { "day": 2, "time": "11:30", "title": "Aligning national policy with local realities" }
+      ]
+    }
+  ],
+  "academics": [
+    {
+      "name": "Daniel MacArthur",
+      "role": "Director",
+      "tag": "🎓 Genomics Leader",
+      "sessions": [
+        { "day": 1, "time": "09:30", "title": "How can Australia lead in genomics?" }
+      ]
+    },
+    {
+      "name": "Cassandra Szoeke",
+      "role": "Hon. Professor Population & Public Health",
+      "tag": "🎓 Women's Health Research",
+      "sessions": [
+        { "day": 1, "time": "11:00", "title": "Sex-specific considerations for digital health" }
+      ]
+    },
+    {
+      "name": "Stephen Duckett",
+      "role": "Honorary Professor",
+      "tag": "🎓 Health Economics",
+      "sessions": [
+        { "day": 2, "time": "13:00", "title": "Who pays, who benefits: funding the future of virtual care" }
+      ]
+    },
+    {
+      "name": "Danny Cai",
+      "role": "Medical Director General Practitioner & Medical Educator",
+      "tag": "🎓 Longevity Research",
+      "sessions": [
+        { "day": 1, "time": "13:00", "title": "Longevity: science vs hype" },
+        { "day": 1, "time": "16:00", "title": "Digital health careers for doctors" }
+      ]
+    },
+    {
+      "name": "Nilmini Wickramasinghe",
+      "role": "Professor & Optus Chair Digital Health",
+      "tag": "🎓 Digital Health Professor",
+      "sessions": [
+        { "day": 1, "time": "15:30", "title": "The triple benefits of digital twins" },
+        { "day": 2, "time": "09:30", "title": "Healthcare is about people, but it fails without the right digital foundation" }
+      ]
+    }
+  ],
+  "ceos": [
+    {
+      "name": "Greg Procter",
+      "role": "Co-founder & Co-CEO",
+      "tag": "🚀 Startup CEO",
+      "sessions": [
+        { "day": 1, "time": "10:25", "title": "The accidental tech company" }
+      ]
+    },
+    {
+      "name": "Paul Seymour",
+      "role": "Co-CEO",
+      "tag": "🚀 AI Pioneer",
+      "sessions": [
+        { "day": 1, "time": "09:00", "title": "Notes from the frontier: modernising legacy systems with agentic AI" }
+      ]
+    },
+    {
+      "name": "Demelza Green",
+      "role": "Co-CEO",
+      "tag": "🚀 AI Pioneer",
+      "sessions": [
+        { "day": 1, "time": "09:00", "title": "Notes from the frontier: modernising legacy systems with agentic AI" }
+      ]
+    },
+    {
+      "name": "Kai Van Lieshout",
+      "role": "Co-Founder & CEO",
+      "tag": "🚀 AI Healthcare",
+      "sessions": [
+        { "day": 1, "time": "11:15", "title": "Building responsibly as the capability of AI expands" },
+        { "day": 2, "time": "11:30", "title": "From insight to action: operationalising AI in clinical workflows" }
+      ]
+    },
+    {
+      "name": "Ray Boyapati",
+      "role": "Chief Clinical Officer",
+      "tag": "🚀 AI Healthcare",
+      "sessions": [
+        { "day": 1, "time": "11:15", "title": "Building responsibly as the capability of AI expands" }
+      ]
+    }
+  ],
+  "healthcare_leaders": [
+    {
+      "name": "Kate Renzenbrink",
+      "role": "Chief Clinical Informatics Officer",
+      "tag": "💡 Nursing Innovation",
+      "sessions": [
+        { "day": 1, "time": "10:00", "title": "Where there's a nurse around, there's a workaround" }
+      ]
+    },
+    {
+      "name": "Robin Mann",
+      "role": "Chief Digital & Information Officer",
+      "tag": "💡 Health System Digital",
+      "sessions": [
+        { "day": 2, "time": "11:00", "title": "Beyond talk into action: How Monash Health is delivering value through automations" },
+        { "day": 2, "time": "15:00", "title": "4.5 million episodes of care: what it takes to deliver innovation at scale" }
+      ]
+    },
+    {
+      "name": "Ben Condon",
+      "role": "Clinical Director - ANZ",
+      "tag": "💡 Clinical Leadership",
+      "sessions": [
+        { "day": 1, "time": "09:30", "title": "Why clinical AI is nothing without clinicians" },
+        { "day": 2, "time": "11:30", "title": "Aligning national policy with local realities" }
+      ]
+    }
+  ],
+  "advocates": [
+    {
+      "name": "Steve King",
+      "role": "Patient Advocate",
+      "tag": "🗣️ Patient Voice",
+      "sessions": [
+        { "day": 1, "time": "10:30", "title": "Designing digital health for all: disability inclusion in action" },
+        { "day": 1, "time": "12:00", "title": "Direct to care: bypassing traditional pathways" },
+        { "day": 1, "time": "14:30", "title": "Consumer first: what healthcare can learn from digital-native CX leaders" }
+      ]
+    },
+    {
+      "name": "Peta Hooke",
+      "role": "Disability Advocate and Founder",
+      "tag": "🗣️ Disability Rights",
+      "sessions": [
+        { "day": 1, "time": "10:30", "title": "Designing digital health for all: disability inclusion in action" }
+      ]
+    },
+    {
+      "name": "Jim O'Shea",
+      "role": "Chief Operating Officer",
+      "tag": "🗣️ Indigenous Health",
+      "sessions": [
+        { "day": 2, "time": "10:00", "title": "Indigenous data sovereignty: nothing about us without us" },
+        { "day": 2, "time": "13:00", "title": "Digital inclusion and culturally safe care for First Nations communities" }
+      ]
+    }
+  ]
+}

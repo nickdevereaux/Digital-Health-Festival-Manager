@@ -1,7 +1,21 @@
 import { defineStore } from 'pinia'
 import agendaData from '../data/agenda.json'
 import type { Session, Stream } from '../types'
-import { ref, computed } from 'vue'
+import { computed, ref } from 'vue'
+import { useLocalStorage } from '@vueuse/core'
+
+// Storage key for cross-device sync
+const DEVICE_ID_STORAGE_KEY = 'dhf2026_device_id'
+
+// Generate or retrieve a unique device ID for sync purposes
+function getDeviceId(): string {
+  let deviceId = localStorage.getItem(DEVICE_ID_STORAGE_KEY)
+  if (!deviceId) {
+    deviceId = `device-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`
+    localStorage.setItem(DEVICE_ID_STORAGE_KEY, deviceId)
+  }
+  return deviceId
+}
 
 interface DayInfo {
   no: number
@@ -30,6 +44,9 @@ interface StoreState {
 }
 
 export const useAgendaStore = defineStore('agenda', () => {
+  // Get device ID for sync
+  const deviceId = getDeviceId()
+
   // State
   const eventData = ref<EventData>({
     title: 'Digital Health Festival 2026',
@@ -42,7 +59,8 @@ export const useAgendaStore = defineStore('agenda', () => {
     { no: 2, label: 'May 21 2026', date: 'Wednesday 21 May 2026' },
   ])
   const allSessions = ref<Session[]>(agendaData.sessions)
-  const favorites = ref<number[]>([])
+  // Use useLocalStorage for persistent favorites that survive HMR rebuilds
+  const favorites = useLocalStorage<number[]>('dhf2026_favorites', [])
   const favoritesOnly = ref<boolean>(false)
   const selectedDay = ref<number>(1)
   const selectedStreams = ref<string[]>([...streams.value.map((s: Stream) => s.key)])
@@ -100,6 +118,32 @@ export const useAgendaStore = defineStore('agenda', () => {
       favorites.value.splice(idx, 1)
     } else {
       favorites.value.push(sessionId)
+    }
+  }
+
+  // Export/import functions for cross-device sync
+  function getExportData(): string {
+    // Return JSON with favorites and device ID for sharing
+    const data = {
+      version: 1,
+      deviceId: deviceId,
+      favorites: favorites.value,
+      exportedAt: new Date().toISOString(),
+    }
+    return JSON.stringify(data)
+  }
+
+  function importData(jsonStr: string): boolean {
+    try {
+      const data = JSON.parse(jsonStr)
+      if (data.version === 1 && Array.isArray(data.favorites)) {
+        favorites.value = data.favorites
+        return true
+      }
+      return false
+    } catch (e) {
+      console.warn('Failed to import favorites:', e)
+      return false
     }
   }
 
@@ -178,6 +222,7 @@ export const useAgendaStore = defineStore('agenda', () => {
     activeStreams,
     filteredSessions,
     currentHours,
+    deviceId,
     toggleFavorite,
     isFavorite,
     selectSession,
@@ -189,5 +234,7 @@ export const useAgendaStore = defineStore('agenda', () => {
     formatTime,
     getStreamColor,
     groupSessionsByHour,
+    getExportData,
+    importData,
   }
 })
